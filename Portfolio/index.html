@@ -1,134 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
- 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhay Raj | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-      <button id="theme-toggle">Toggle Dark Mode</button>
-  <section>
-    <h1>Introduction to Web Technologies</h1>
-    <p> 
-        <span id="typing-effect"></span>
+  <header>
+    <div class="logo">Abhay Raj</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#profile">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      Web technology is the combination of tools, languages, and standards used to create and run websites and web applications. It allows users to access and interact with information on the internet. The three core technologies in web development are:
-    </p>
-    <ul>
-      <li><strong>HTML (HyperText Markup Language):</strong> The backbone of any website, used to structure content on the web.</li>
-      <li><strong>CSS (Cascading Style Sheets):</strong> Used to style and layout web pages, making them visually appealing.</li>
-      <li><strong>JavaScript:</strong> A programming language that adds interactivity and dynamic behavior to websites.</li>
-    </ul>
+  <section id="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I’m Abhay Raj, a passionate Web Developer & Programmer.</p>
+    <a href="#contact-form" class="btn">Get In Touch</a>
   </section>
 
   <section id="profile">
-    <div>
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="Screenshot 2024-12-22 124709.png" alt="Abhay Raj" />
       <div>
-        <h1>Abhay Raj</h1>
-        <p>Contact: <a href="https://mail.google.com/mail/u/0/" class="blue-link">abhayraj3051@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/help/linkedin/answer/a522735" class="blue-link">https://www.linkedin.com/in/abhay-raj-650905268</a></p>
+        <p>I am currently pursuing B.Tech in IT at RGIPT. I am passionate about building web applications using MERN Stack and strengthening my DSA skills in C++.</p>
+        <p>Email: <a href="mailto:abhayraj3051@gmail.com">abhayraj3051@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/abhay-raj-650905268" target="_blank">Visit Profile</a></p>
       </div>
-      <div>
-        <table>
-          <tr>
-            <td> 
-              <img src="Screenshot 2024-12-22 124709.png" alt="Abhay Raj pic" height="150px" width="85px">
-            </td>
-            <td>
-              My self Abhay Raj I am currently pursuing btech in IT from prestigious
-              government college RGIPT a college of national importance, yh i am 
-              pursuing my passion in coding and building website by learning Mernstack and also learning DSA in C++.
-            </td>
-          </tr>
-        </table>
-      </div>
-      <section>
-        <h2>Education & Skills</h2>
-      </section>
-      <ul>
-        <li>Secondary School - D.P.S Barra, Kanpur</li>
-        <li>Intermediate - D.P.S Barra, Kanpur</li>
-        <li>B.Tech - Rajiv Gandhi Institute Of Petroleum Technology</li>
-      </ul>
-      <section>
-        <h3>Skills</h3>
-        <ul>
-          <li>C</li>
-          <li>C++</li>
-          <li>Object Oriented Programming</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-        </ul>
-      </section>
-      <div>
-        <h3>Work Experience</h3>
-        <p>Event Management Executive at THINGQBATOR</p>
-        <p>Co-Head at Energia 2025</p>
-      </div>
-      <section> 
-        <h4>Academic Details</h4>
-        <table border="4">
-          <thead>
-            <th>Degree</th>
-            <th>Institute/School</th> 
-            <th>Grade/Percentage</th>
-            <th>Year</th>
-          </thead>
-          <tr>
-            <td>Secondary School</td>
-            <td>DPS Kanpur</td>
-            <td>94.6</td>
-            <td>2020</td>   
-          </tr> 
-          <tr>
-            <td>Intermediate School</td>
-            <td>DPS Kanpur</td>
-            <td>90.2</td>
-            <td>2022</td>   
-          </tr>
-          <tr>
-            <td>B.Tech</td>
-            <td>RGIPT, Amethi</td>
-            <td>7.6</td>
-            <td>2027</td>    
-          </tr>
-        </table>
-      </section>
     </div>
   </section>
-  
-  <section id="quote-section">
-    <h2>Random Quote</h2>
-    <p id="quote-text"></p>
-    <button id="new-quote">New Quote</button>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Secondary School - D.P.S Barra, Kanpur</li>
+      <li>Intermediate - D.P.S Barra, Kanpur</li>
+      <li>B.Tech - RGIPT, Amethi</li>
+    </ul>
   </section>
 
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>C</li>
+      <li>C++</li>
+      <li>OOPs</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Event Management Executive at THINGQBATOR</p>
+    <p>Co-Head at Energia 2025</p>
+  </section>
+
+  <section id="academic">
+    <h2>Academic Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>Institute</th>
+          <th>Grade</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Secondary</td>
+          <td>DPS Kanpur</td>
+          <td>94.6%</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>Intermediate</td>
+          <td>DPS Kanpur</td>
+          <td>90.2%</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>B.Tech</td>
+          <td>RGIPT</td>
+          <td>7.6 CGPA</td>
+          <td>2027</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
   <section id="contact-form">
     <h2>Contact Me</h2>
-    <form id="form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
       <button type="submit">Submit</button>
     </form>
-    <p id="form-message"></p>
   </section>
 
-
-  <section id="counter-section">
-    <h2>Interactive Counter</h2>
-    <p>Count: <span id="count">0</span></p>
-    <button id="increment">+</button>
-    <button id="decrement">-</button>
-  </section>
-
-  
-
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Abhay Raj. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/abhay-raj-650905268" target="_blank">LinkedIn</a>
+      <a href="mailto:abhayraj3051@gmail.com">Email</a>
+    </div>
+  </footer>
 </body>
 </html>
